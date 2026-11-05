@@ -1,399 +1,102 @@
-<!DOCTYPE html>
-<html lang="dv" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>މަހިބަދޫ ދަތުރުފަތުރުގެ ގަޑިތައް</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts for Divehi (Inter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: #0b1329;
-            color: #f8fafc;
-        }
-        .glass-card {
-            background: rgba(23, 37, 84, 0.4);
-            backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .tab-active {
-            background-color: #0284c7;
-            color: white;
-            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
-        }
-    </style>
-</head>
-<body class="min-h-screen pb-12 select-none">
+🔷 HAISAM 🔷 
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 glass-card border-b border-slate-800 px-4 py-3.5 mb-5 shadow-lg">
-        <div class="max-w-md mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 text-white flex items-center justify-center font-bold text-xl shadow-md">
-                    <i class="fa-solid fa-ship"></i>
-                </div>
-                <div>
-                    <h1 class="text-base font-bold text-slate-100 tracking-wide">މަހިބަދޫ ދަތުރުފަތުރު</h1>
-                    <p class="text-[11px] text-sky-400">ލައިވް ޝެޑިއުލް އަދި ޓްރެކިންގ</p>
-                </div>
-            </div>
-            <div id="liveClock" class="text-xs font-mono bg-slate-900/80 border border-slate-700/80 px-2.5 py-1.5 rounded-lg text-cyan-300 font-bold shadow-inner">
-                00:00:00
-            </div>
-        </div>
-    </header>
+Next trip:
+🗓 (02/11/2026) MONDAY
 
-    <main class="max-w-md mx-auto px-4 space-y-4">
+Departure from Mahibadhoo: Midnight 1:30 am
+Departure from Male’ Monday- 14:30 pm
 
-        <!-- Route Selector Toggle -->
-        <div class="bg-slate-900/90 p-1.5 rounded-2xl flex border border-slate-800 shadow-inner">
-            <button id="routeMahibadhooToMale" onclick="setRoute('MHD_MLE')" class="flex-1 py-3 px-2 rounded-xl text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 tab-active">
-                <span>މަހިބަދޫ</span>
-                <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                <span>މާލެ / އެއާޕޯޓް</span>
-            </button>
-            <button id="routeMaleToMahibadhoo" onclick="setRoute('MLE_MHD')" class="flex-1 py-3 px-2 rounded-xl text-xs font-bold text-slate-400 transition-all duration-200 flex items-center justify-center gap-2">
-                <span>މާލެ / އެއާޕޯޓް</span>
-                <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                <span>މަހިބަދޫ</span>
-            </button>
-        </div> <div class="glass-card p-4 rounded-2xl mb-4 text-left">
-    <h3 class="text-lg font-bold mb-2">🗓 Monday (2 November 2026)</h3>
-    <p class="text-sm mb-3"><strong>For online bookings:</strong> odiapp on <a href="http://onelink.to/odiapp" class="text-blue-400 underline">http://onelink.to/odiapp</a> or visit <a href="https://odi.travel" class="text-blue-400 underline">https://odi.travel</a></p>
-    
-    <div class="space-y-2 text-sm">
-        <p class="font-semibold text-amber-300">🚤 HMHI Travels 07 (44 seater)</p>
-        <ul class="list-disc list-inside space-y-
+⭕Male’ Loading TIme : 7:00-14:30 ⭕
+📍: Male industrial village
 
-        <p class="mt-3 text-xs opacity-80">📞 +(960) 9980462 | 📞 +(960) 7980462</p>
-    </div> <div class="schedule-card">
-    <h3>🗓 Monday (2 November 2026)</h3>
-    <p><strong>For online bookings:</strong> odiapp on <a href="http://onelink.to/odiapp">http://onelink.to/odiapp</a> or visit our website <a href="https://odi.travel">https://odi.travel</a></p>
-    
-    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
-    <ul>
-        <li>⏰ 6:45 From 🏝 Kunburudhoo</li>
-        <li>⏰ 7:00 From 🏝 Mahibadhoo (📍 Uthuru ban’dharu)</li>
-        <li>⏰ 7:05 From 🏝 Omadhoo</li>
-        <li>⏰ 7:15 From 🏝 Hangnameedhoo</li>
-    </ul>
+                        🔷ހައިސަމް 🔷
+ ކުރިޔަށް އޮތް ދަތުރު(02/11/2026 ) ހޯމަ
+  
+▫️       މަހިބަދޫ އިން ފުރުން : ދަންވަރު 1:30
+▫️         މާލެ އިން ފުރުން :މެންދުރު 14:30
 
-    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
-    <p>⏰ 10:30 From 🏝 Male’ (📍 In front of barcelo nasandhura)</p>
+▫️     ⭕ މުދާ އަރުވާ ގަޑި :
+ހެނދުނު 7:00 - 14:30 ⭕
+  
+▫️ފޯނު ނަންބަރު:         9999850،,9105370📞
+       9880152, 9758634
 
-    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
-    <ul>
-        <li>⏰ 12:45 From 🏝 Kunburudhoo</li>
-        <li>⏰ 13:00 From 🏝 Mahibادhoo (📍 Dhekunu ban’dharu)</li>
-        <li>⏰ 13:05 From 🏝 Omadhoo</li>
-        <li>⏰ 13:15 From 🏝 Hangnameedhoo</li>
-    </ul>
+https://m.followme.mv/public/?id=18316🗓 Sunday (1 November 2026)
+—————————————————-
+For online bookings 
+odiapp on http://onelink.to/odiapp or visit our website https://odi.travel
+————————————-————-
+🚤 HMHI Travels 05 (55 seater)
 
-    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
-    <p>⏰ 16:00 From 🏝 Male’ (📍 In front of barcelo’ nasandhura)</p>
+⏰ 5:45 From 🏝 Kunburudhoo 
+⏰ 6:00 From 🏝 Mahibadhoo
+📍 Uthuru ban’dharu 
+⏰ 6:05 From 🏝 Omadhoo 
+⏰ 6:15 From 🏝 Hangnameedhoo 
+——————————
+🚤 HMHI Travels 05 (55 seater)
 
-    <p>📞 +(960) 9980462 | 📞 +(960) 7980462</p>
-</div>
+⏰ 10:30 From 🏝 Male’
+📍 In front of nasandhura 
+———————————————-
+🚤 HMHI Travels 07 (44 seater)
 
-</div>
+⏰ 12:45 From 🏝 Kunburudhoo 
+⏰ 13:00 From 🏝 Mahibadhoo
+📍 Dhekunu ban’dharu 
+⏰ 13:05 From 🏝 Omadhoo 
+⏰ 13:15 From 🏝 Hangnameedhoo 
+
+——————————
+🚤 HMHI Travels 07 (44 seater)
+
+⏰ 16:00 From 🏝 Male’
+📍 In front of nasandhura 
+———————————————-
+📞 +(960) 9980462 
+📞 +(960) 7980462
+
+Follow HMHI Travels on:-
+FollowMe
+📍 https://m.followme.mv/public/325/?a=group
+ Viber
+ https://invite.viber.com/?g2=AQAxY1bpkvPDc0hIA78pWZGormV%2BcxkvfD7qxV2zrVFrWHoHAWRyT8iQ6NQpB3Kq
+TikTok
+https://vm.tiktok.com/ZSdrSFtSa/
+Facebook
+ https://www.facebook.com/hmhitravels/
+Instagram 
+https://www.instagram.com/hmhitravels/MULTI MALDIVES FERRY
+
+🛥 BOAT NAME : MULTI BEAST 
+ 
+🔴17/10/2026*
+🔴 17th OCTOBER
+ 〰️(SATURDAY)*
+
+DEPATURE 
+🏝  FROM MALE  TO MAHIBADHOO / DHANGETHI⤵️
+( ⏰️️ *10:00* ➡️ )
 
 
-        <!-- Filter Tags & Search -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-            <button onclick="setFilter('all')" id="filterAll" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800 text-sky-400 border border-sky-500/30 whitespace-nowrap shadow-sm">
-                ހުރިހާ އުޅަނދެއް
-            </button>
-            <button onclick="setFilter('speedboat')" id="filterSpeedboat" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800/60 text-slate-400 border border-slate-700/60 whitespace-nowrap hover:bg-slate-800">
-                ⚡ ސްޕީޑްބޯޓު
-            </button>
-            <button onclick="setFilter('cargo')" id="filterCargo" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800/60 text-slate-400 border border-slate-700/60 whitespace-nowrap hover:bg-slate-800">
-                📦 ކާގޯ ބޯޓު
-            </button>
-        </div>
+DEPATURE 
+🛫  FROM AIRPORT  TO MAHIBADHOO / DHANGETHI⤵️
+( ⏰️️ *10:15* ➡️ )
 
-        <!-- Next Departure Highlight Banner -->
-        <div id="nextDepartureCard" class="bg-gradient-to-br from-sky-950/90 via-slate-900 to-indigo-950/80 border border-sky-500/30 rounded-2xl p-4 shadow-xl">
-            <div class="flex justify-between items-start mb-2">
-                <span class="text-[10px] font-bold text-sky-300 uppercase tracking-wider bg-sky-500/20 px-2.5 py-1 rounded-md border border-sky-500/30">
-                    <i class="fa-solid fa-clock-rotate-left mr-1"></i> ދެން އެންމެ އަވަހަށް ފުރާ
-                </span>
-                <span id="nextCountdown" class="text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/30">
-                    --:--
-                </span>
-            </div>
-            <div class="flex justify-between items-end mt-2">
-                <div>
-                    <h3 id="nextVesselName" class="text-base font-extrabold text-white mb-0.5">---</h3>
-                    <p id="nextRouteText" class="text-xs text-slate-300">---</p>
-                    <p id="nextLocationText" class="text-[11px] text-amber-400 font-medium mt-1">
-                        <i class="fa-solid fa-location-dot text-amber-400 ml-1"></i><span>---</span>
-                    </p>
-                </div>
-                <div class="text-right">
-                    <span id="nextTime" class="text-2xl font-black text-sky-400 font-mono">--:--</span>
-                </div>
-            </div>
-        </div>
+DEPATURE 
+  FROM DHANGETHI TO MALE / AIRPORT⤵️
+( ⏰️️ *16:00* ➡️ )
 
-        <!-- Vessel Schedule List -->
-        <div class="space-y-3.5" id="vesselsList">
-            <!-- Dynamic Content generated by JS -->
-        </div>
-
-        <!-- Information Footer Card -->
-        <div class="glass-card rounded-2xl p-4 border border-slate-800 space-y-2">
-            <h4 class="text-xs font-bold text-slate-200 flex items-center gap-2">
-                <i class="fa-solid fa-circle-info text-sky-400"></i>
-                ދަތުރުވެރިންގެ ސަމާލުކަމަށް
-            </h4>
-            <p class="text-[11px] text-slate-400 leading-relaxed">
-                މިއީ މަހިbadhoo، އޮމަދޫ، ހަންގާމީދޫ، ކުންބުރުދޫ އަދި މާލެއާ ދެމެދު ދަތުރުކުރާ އުޅަނދުފަހަރުގެ އެންމެ ފަހުގެ ޝެޑިއުލްއެވެ. ޓިކެޓް ނެގުމަށް ނުވަތަ މުދާ އުފުލުމުގެ ކުރިން އުޅަނދުގެ ނަންބަރަށް ގުޅުއްވުން އެދެމެވެ.
-            </p>
-        </div> <div class="schedule-card">
-    <h3>🗓 Monday (2 November 2026)</h3>
-    <div class="glass-card p-4 rounded-2xl mb-4 text-left">
-    <h3 class="text-lg font-bold mb-2">🗓 Monday (2 November 2026)</h3>
-    <p class="text-sm mb-3"><strong>For online bookings:</strong> odiapp on <a href="http://onelink.to/odiapp" class="text-blue-400 underline">http://onelink.to/odiapp</a> or visit <a href="https://odi.travel" class="text-blue-400 underline">https://odi.travel</a></p>
-    
-    <div class="space-y-2 text-sm">
-        <p class="font-semibold text-amber-300">🚤 HMHI Travels 07 (44 seater)</p>
-        <ul class="list-disc list-inside space-y-1">
+🏝 DEPATURE FROM MAHIBADHOO TO MALE/AIRPORT⤵️
+( ⏰️ *16:25* ➡️ )
 
 
-        <p class="mt-3 text-xs opacity-80">📞 +(960) 9980462 | 📞 +(960) 7980462</p>
-    </div>
-</div>
+*The boat will dock at Jetty 1, 2 .depending on space availability and ease of access upon arrival & depature.*
+ ⚠️Hurry book your seats now.
 
-</div>
+https://m.followme.mv/public/19255
 
-
-    </main>
-
-    <script>
-        // Data Structure for All Vessels & Trips
-        const vesselsData = [
-            {
-                id: 'hmhi05',
-                name: 'HMHI Travels 05 (55 ޝީޓް)',
-                type: 'speedboat',
-                typeLabel: 'ސްޕީޑްބޯޓް',
-                icon: 'fa-bolt',
-                badgeBg: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-                contacts: ['9980462', '7980462'],
-                followMeUrl: 'https://m.followme.mv/public/325/?a=group',
-                bookingUrl: 'https://odi.travel',
-                trips: {
-                    MHD_MLE: {
-                        time: '06:00',
-                        location: 'އުތުރު ބަނދަރު (މަހިބަދޫ)',
-                        subStops: 'ކުންބުރުދޫ 05:45 | އޮމަދޫ 06:05 | ހަންގާމީދޫ 06:15'
-                    },
-                    MLE_MHD: {
-                        time: '10:30',
-                        location: 'ނަސަންދުރަ ކުރިމަތި (މާލެ)',
-                        subStops: 'މާލެ އިން ފުރައިގެން އަތޮޅު ތެރެއަށް'
-                    }
-                }
-            },
-            {
-                id: 'hmhi07',
-                name: 'HMHI Travels 07 (44 ޝީޓް)',
-                type: 'speedboat',
-                typeLabel: 'ސްޕީޑްބޯޓް',
-                icon: 'fa-bolt',
-                badgeBg: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-                contacts: ['9980462', '7980462'],
-                followMeUrl: 'https://m.followme.mv/public/325/?a=group',
-                bookingUrl: 'https://odi.travel',
-                trips: {
-                    MHD_MLE: {
-                        time: '13:00',
-                        location: 'ދެކުނު ބަނދަރު (މަހިބަދޫ)',
-                        subStops: 'ކުންބުރުދޫ 12:45 | އޮމަދޫ 13:05 | ހަންގާމީދޫ 13:15'
-                    },
-                    MLE_MHD: {
-                        time: '16:00',
-                        location: 'ނަސަންދުރަ ކުރިމަތި (މާލެ)',
-                        subStops: 'މާލެ އިން ފުރައިގެން 
-
-            },
-            {
-                id: 'multi_beast',
-                name: 'މަލްޓި ބީސްޓް (Multi Beast)',
-                type: 'speedboat',
-                typeLabel: 'ސްޕީޑްބޯޓް',
-                icon: 'fa-bolt',
-                badgeBg: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-                contacts: ['7314445', '7414445'],
-                followMeUrl: 'https://m.followme.mv/public/19255',
-                bookingUrl: null,
-                trips: {
-                    MHD_MLE: {
-                        time: '16:25',
-                        location: 'މަހިބަދޫ ބަނދަރު',
-                        subStops: 'ދަނގެތި އިން 16:00 | މާލެ/އެއާޕޯޓަށް'
-                    },
-                    MLE_MHD: {
-                        time: '10:00',
-                        location: 'ޖެޓީ 1/2 (މާލެ) / 10:15 އެއާޕޯޓް',
-                        subStops: 'މާލެ އިން 10:00 | އެއާޕޯޓުން 10:15'
-                    }
-                }
-            },
-            {
-                id: 'haisham',
-                name: 'ހައިސަމް (Cargo Boat)',
-                type: 'cargo',
-                typeLabel: 'ކާގޯ ބޯޓު',
-                icon: 'fa-box-archive',
-                badgeBg: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-                contacts: ['9999850', '9105370', '9880152', '9758634'],
-                followMeUrl: 'https://m.followme.mv/public/?id=18316',
-                bookingUrl: null,
-                trips: {
-                    MHD_MLE: {
-                        time: '01:30',
-                        location: 'މަހިބަދޫ ބަނދަރު (ދަންވަރު)',
-                        subStops: 'ދަތުރު: 02/11/2026 (ހޯމަ)'
-                    },
-                    MLE_MHD: {
-                        time: '14:30',
-                        location: 'އިންޑަސްޓްރިއަލް ވިލެޖް (މާލެ)',
-                        subStops: '⭕ މުދާ އަރުވާ ގަޑި: 07:00 - 14:30 ⭕'
-                    }
-                }
-            }
-        ];
-
-        let currentRoute = 'MHD_MLE'; // 'MHD_MLE' or 'MLE_MHD'
-        let currentFilter = 'all';    // 'all', 'speedboat', 'cargo'
-
-        // Live Clock Function
-        function updateClock() {
-            const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-US', { hour12: false });
-            document.getElementById('liveClock').textContent = timeStr;
-            updateNextDeparture();
-        }
-
-        // Set Active Route Toggle
-        function setRoute(route) {
-            currentRoute = route;
-            const mhdBtn = document.getElementById('routeMahibadhooToMale');
-            const mleBtn = document.getElementById('routeMaleToMahibadhoo');
-
-            if (route === 'MHD_MLE') {
-                mhdBtn.className = 'flex-1 py-3 px-2 rounded-xl text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 tab-active';
-                mleBtn.className = 'flex-1 py-3 px-2 rounded-xl text-xs font-bold text-slate-400 transition-all duration-200 flex items-center justify-center gap-2';
-            } else {
-                mleBtn.className = 'flex-1 py-3 px-2 rounded-xl text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 tab-active';
-                mhdBtn.className = 'flex-1 py-3 px-2 rounded-xl text-xs font-bold text-slate-400 transition-all duration-200 flex items-center justify-center gap-2';
-            }
-
-            renderList();
-            updateNextDeparture();
-        }
-
-        // Set Filter (All, Speedboat, Cargo)
-        function setFilter(type) {
-            currentFilter = type;
-            
-            ['all', 'speedboat', 'cargo'].forEach(t => {
-                const btn = document.getElementById(`filter${t.charAt(0).toUpperCase() + t.slice(1)}`);
-                if (t === type) {
-                    btn.className = 'px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800 text-sky-400 border border-sky-500/30 whitespace-nowrap shadow-sm';
-                } else {
-                    btn.className = 'px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800/60 text-slate-400 border border-slate-700/60 whitespace-nowrap hover:bg-slate-800';
-                }
-            });
-
-            renderList();
-        }
-
-        // Render Vessel Cards
-        function renderList() {
-            const container = document.getElementById('vesselsList');
-            container.innerHTML = '';
-
-            const filtered = vesselsData.filter(v => {
-                if (currentFilter === 'all') return true;
-                return v.type === currentFilter;
-            });
-
-            if (filtered.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center py-8 glass-card rounded-2xl border border-slate-800">
-                        <p class="text-slate-400 text-xs">މި ކެޓަގަރީގެ އެއްވެސް އުޅަނދެއް ނެތް</p>
-                    </div>
-                `;
-                return;
-            }
-
-            filtered.forEach(vessel => {
-                const trip = vessel.trips[currentRoute];
-
-                // Contact Links HTML
-                const contactsHTML = vessel.contacts.map(num => `
-                    <a href="tel:${num}" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-sky-950 text-slate-200 border border-slate-700 text-[11px] font-mono flex items-center gap-1 transition-colors">
-                        <i class="fa-solid fa-phone text-sky-400 text-[10px]"></i> ${num}
-                    </a>
-                `).join('');
-
-                const card = document.createElement('div');
-                card.className = 'glass-card rounded-2xl p-4 transition-all duration-200 hover:border-slate-700 space-y-3 shadow-md';
-                card.innerHTML = `
-                    <!-- Header info -->
-                    <div class="flex justify-between items-start">
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 border border-slate-700/80 shadow-inner">
-                                <i class="fa-solid ${vessel.icon}"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-bold text-slate-100">${vessel.name}</h3>
-                                <span class="inline-block mt-0.5 text-[10px] px-2 py-0.5 rounded font-semibold border ${vessel.badgeBg}">
-                                    ${vessel.typeLabel}
-                                </span>
-                            </div>
-                        </div>
-                        <div class="text-right">
-                            <span class="text-xl font-black text-sky-400 font-mono tracking-tight">${trip.time}</span>
-                            <span class="block text-[10px] text-slate-400 font-medium">ފުރާ ގަޑި</span>
-                        </div>
-                    </div>
-
-                    <!-- Location & Stops -->
-                    <div class="bg-slate-900/60 rounded-xl p-2.5 text-xs border border-slate-800/80 space-y-1">
-                        <div class="flex items-center gap-2 text-slate-200 font-medium">
-                            <i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
-                            <span>${trip.location}</span>
-                        </div>
-                        ${trip.subStops ? `
-                            <div class="text-[11px] text-slate-400 pr-5">
-                                ${trip.subStops}
-                            </div>
-                        ` : ''}
-                    </div>
-
-                    <!-- Phone Numbers -->
-                    <div class="flex flex-wrap gap-1.5 pt-1">
-                        ${contactsHTML}
-                    </div>
-
-                    <!-- Action Buttons (Live Tracking & Booking) -->
-                    <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
-                        ${vessel.followMeUrl ? `
-                            <a href="${vessel.followMeUrl}" target="_blank" class="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-sky-600 to-cyan-600 hover:from-sky-500 hover:to-cyan-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md transition-all">
-                                <i class="fa-solid fa-crosshairs text-cyan-200"></i>
-                                <span>ލައިވް ޓްރެކިންގ</span>
-                            </a>
-                        ` : ''}
-                        
-                        ${vessel.bookingUrl ? `
-                            <a href="${vessel.bookingUrl}" target="_blank" class="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 font-bold text-xs flex items-center justify-center gap-1.5 transition-all">
-                                <i class="fa-solid fa-ticket text-emerald-400"></i>
-                                <span>ބުކިންގ</
+📞 7414445 DHANGETHI 🏝 
+📞  7314445 MAHIBADHOO 🏝 
+MULTIMALDIVES.COM
+މިޔާ އެއްގޮތަށަ އެ އެޕްލިކޭޝަން އަށް އަޅާލަދީ
