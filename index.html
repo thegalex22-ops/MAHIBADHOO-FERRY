@@ -68,29 +68,38 @@
     
     <div class="space-y-2 text-sm">
         <p class="font-semibold text-amber-300">🚤 HMHI Travels 07 (44 seater)</p>
-        <ul class="list-disc list-inside space-y-1">
-            <li>⏰ 6:45 From 🏝 Kunburudhoo</li>
-            <li>⏰ 7:00 From 🏝 Mahibadhoo (📍 Uthuru ban’dharu)</li>
-            <li>⏰ 7:05 From 🏝 Omadhoo</li>
-            <li>⏰ 7:15 From 🏝 Hangnameedhoo</li>
-        </ul>
-        
-        <p class="font-semibold text-amber-300 mt-2">🚤 HMHI Travels 07 (44 seater)</p>
-        <p>⏰ 10:30 From 🏝 Male’ (📍 In front of barcelo nasandhura)</p>
-
-        <p class="font-semibold text-amber-300 mt-2">🚤 HMHI Travels 07 (44 seater)</p>
-        <ul class="list-disc list-inside space-y-1">
-            <li>⏰ 12:45 From 🏝 Kunburudhoo</li>
-            <li>⏰ 13:00 From 🏝 Mahibadhoo (📍 Dhekunu ban’dharu)</li>
-            <li>⏰ 13:05 From 🏝 Omadhoo</li>
-            <li>⏰ 13:15 From 🏝 Hangnameedhoo</li>
-        </ul>
-
-        <p class="font-semibold text-amber-300 mt-2">🚤 HMHI Travels 07 (44 seater)</p>
-        <p>⏰ 16:00 From 🏝 Male’ (📍 In front of barcelo’ nasandhura)</p>
+        <ul class="list-disc list-inside space-y-
 
         <p class="mt-3 text-xs opacity-80">📞 +(960) 9980462 | 📞 +(960) 7980462</p>
-    </div>
+    </div> <div class="schedule-card">
+    <h3>🗓 Monday (2 November 2026)</h3>
+    <p><strong>For online bookings:</strong> odiapp on <a href="http://onelink.to/odiapp">http://onelink.to/odiapp</a> or visit our website <a href="https://odi.travel">https://odi.travel</a></p>
+    
+    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
+    <ul>
+        <li>⏰ 6:45 From 🏝 Kunburudhoo</li>
+        <li>⏰ 7:00 From 🏝 Mahibadhoo (📍 Uthuru ban’dharu)</li>
+        <li>⏰ 7:05 From 🏝 Omadhoo</li>
+        <li>⏰ 7:15 From 🏝 Hangnameedhoo</li>
+    </ul>
+
+    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
+    <p>⏰ 10:30 From 🏝 Male’ (📍 In front of barcelo nasandhura)</p>
+
+    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
+    <ul>
+        <li>⏰ 12:45 From 🏝 Kunburudhoo</li>
+        <li>⏰ 13:00 From 🏝 Mahibادhoo (📍 Dhekunu ban’dharu)</li>
+        <li>⏰ 13:05 From 🏝 Omadhoo</li>
+        <li>⏰ 13:15 From 🏝 Hangnameedhoo</li>
+    </ul>
+
+    <h4>🚤 HMHI Travels 07 (44 seater)</h4>
+    <p>⏰ 16:00 From 🏝 Male’ (📍 In front of barcelo’ nasandhura)</p>
+
+    <p>📞 +(960) 9980462 | 📞 +(960) 7980462</p>
+</div>
+
 </div>
 
 
@@ -387,61 +396,4 @@
                         ${vessel.bookingUrl ? `
                             <a href="${vessel.bookingUrl}" target="_blank" class="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 font-bold text-xs flex items-center justify-center gap-1.5 transition-all">
                                 <i class="fa-solid fa-ticket text-emerald-400"></i>
-                                <span>ބުކިންގ</span>
-                            </a>
-                        ` : ''}
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-        }
-
-        // Calculate Next Departure Countdown
-        function updateNextDeparture() {
-            const now = new Date();
-            const currentMinutes = now.getHours() * 60 + now.getMinutes();
-            
-            let nextVessel = null;
-            let minDiff = Infinity;
-            let nextTripObj = null;
-
-            vesselsData.forEach(vessel => {
-                const trip = vessel.trips[currentRoute];
-                const [h, m] = trip.time.split(':').map(Number);
-                let vesselMinutes = h * 60 + m;
-
-                let diff = vesselMinutes - currentMinutes;
-                if (diff <= 0) {
-                    diff += 24 * 60; // Next day departure
-                }
-
-                if (diff < minDiff) {
-                    minDiff = diff;
-                    nextVessel = vessel;
-                    nextTripObj = trip;
-                }
-            });
-
-            if (nextVessel && nextTripObj) {
-                const hoursLeft = Math.floor(minDiff / 60);
-                const minsLeft = minDiff % 60;
-                
-                document.getElementById('nextVesselName').textContent = nextVessel.name;
-                document.getElementById('nextTime').textContent = nextTripObj.time;
-                document.getElementById('nextLocationText').querySelector('span').textContent = nextTripObj.location;
-                
-                const fromText = currentRoute === 'MHD_MLE' ? 'މަހިބަދޫ އިން މާލެއަށް' : 'މާލެ އިން މަހިބަދޫއަށް';
-                document.getElementById('nextRouteText').textContent = fromText;
-                
-                document.getElementById('nextCountdown').textContent = 
-                    `${hoursLeft}ގ ${minsLeft}މ ފަހުން`;
-            }
-        }
-
-        // Initialize App
-        setInterval(updateClock, 1000);
-        updateClock();
-        renderList();
-    </script>
-</body>
-</html>
+                                <span>ބުކިންގ</
