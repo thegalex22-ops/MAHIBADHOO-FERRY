@@ -1,102 +1,103 @@
-🔷 HAISAM 🔷 
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>މަހިބަދޫ ދަތުރުފަތުރުގެ ގަޑިތައް</title>
+    <style>
+        body {
+            font-family: "Tharaa", "MV Faseyha", Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077b6;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .transport-card {
+            background: #f9f9f9;
+            border-right: 5px solid #0077b6;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .transport-card.cargo {
+            border-right-color: #e76f51;
+        }
+        .transport-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2b2d42;
+        }
+        .schedule-info {
+            font-size: 15px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            background: #e0f2fe;
+            color: #0369a1;
+            margin-left: 5px;
+        }
+        .cargo .tag {
+            background: #ffe4e6;
+            color: #9f1239;
+        }
+    </style>
+</head>
+<body>
 
-Next trip:
-🗓 (02/11/2026) MONDAY
+<div class="container">
+    <h1>މަހިބަދޫ - މާލެ ދަތުރުފަތުރު</h1>
 
-Departure from Mahibadhoo: Midnight 1:30 am
-Departure from Male’ Monday- 14:30 pm
+    <!-- އެޗް އެމް އެޗް އައި ސްޕީޑް -->
+    <div class="transport-card">
+        <div class="transport-title">އެޗް އެމް އެޗް އައި ސްޕީޑް <span class="tag">ސްޕީޑްބޯޓް</span></div>
+        <div class="schedule-info">🚢 މަހިބަދޫ އިން ފުރާ ގަޑި: <strong>07:00</strong></div>
+        <div class="schedule-info">🏙️ މާލެ އިން ފުރާ ގަޑި: <strong>16:00</strong></div>
+    </div>
 
-⭕Male’ Loading TIme : 7:00-14:30 ⭕
-📍: Male industrial village
+    <!-- މައިނާ ސްޕީޑް -->
+    <div class="transport-card">
+        <div class="transport-title">މައިނާ ސްޕީޑް <span class="tag">ސްޕީޑްބޯޓް</span></div>
+        <div class="schedule-info">🚢 މަހިބަދޫ އިން ފުރާ ގަޑި: <strong>07:00</strong></div>
+        <div class="schedule-info">🏙️ މާލެ އިން ފުރާ ގަޑި: <strong>16:00</strong></div>
+    </div>
 
-                        🔷ހައިސަމް 🔷
- ކުރިޔަށް އޮތް ދަތުރު(02/11/2026 ) ހޯމަ
-  
-▫️       މަހިބަދޫ އިން ފުރުން : ދަންވަރު 1:30
-▫️         މާލެ އިން ފުރުން :މެންދުރު 14:30
+    <!-- ވެރޯނާ ކާގޯ ބޯޓް -->
+    <div class="transport-card cargo">
+        <div class="transport-title">ވެރޯނާ ކާގޯ ބޯޓް <span class="tag">ކާގޯ</span></div>
+        <div class="schedule-info">🚢 މަހިބަދޫ އިން ފުރާ ގަޑި: <strong>02:30</strong></div>
+        <div class="schedule-info">🏙️ މާލެ އިން ފުރާ ގަޑި: <strong>14:30</strong></div>
+    </div>
 
-▫️     ⭕ މުދާ އަރުވާ ގަޑި :
-ހެނދުނު 7:00 - 14:30 ⭕
-  
-▫️ފޯނު ނަންބަރު:         9999850،,9105370📞
-       9880152, 9758634
+    <!-- ހައިޝަމް ކާގޯ ބޯޓް -->
+    <div class="transport-card cargo">
+        <div class="transport-title">ހައިޝަމް ކާގޯ ބޯޓް <span class="tag">ކާގޯ</span></div>
+        <div class="schedule-info">🚢 މަހިބަދޫ އިން ފުރާ ގަޑި: <strong>02:30</strong></div>
+        <div class="schedule-info">🏙️ މާލެ އިން ފުރާ ގަޑި: <strong>14:30</strong></div>
+    </div>
 
-https://m.followme.mv/public/?id=18316🗓 Sunday (1 November 2026)
-—————————————————-
-For online bookings 
-odiapp on http://onelink.to/odiapp or visit our website https://odi.travel
-————————————-————-
-🚤 HMHI Travels 05 (55 seater)
+</div>
 
-⏰ 5:45 From 🏝 Kunburudhoo 
-⏰ 6:00 From 🏝 Mahibadhoo
-📍 Uthuru ban’dharu 
-⏰ 6:05 From 🏝 Omadhoo 
-⏰ 6:15 From 🏝 Hangnameedhoo 
-——————————
-🚤 HMHI Travels 05 (55 seater)
+</body>
+</html>
 
-⏰ 10:30 From 🏝 Male’
-📍 In front of nasandhura 
-———————————————-
-🚤 HMHI Travels 07 (44 seater)
-
-⏰ 12:45 From 🏝 Kunburudhoo 
-⏰ 13:00 From 🏝 Mahibadhoo
-📍 Dhekunu ban’dharu 
-⏰ 13:05 From 🏝 Omadhoo 
-⏰ 13:15 From 🏝 Hangnameedhoo 
-
-——————————
-🚤 HMHI Travels 07 (44 seater)
-
-⏰ 16:00 From 🏝 Male’
-📍 In front of nasandhura 
-———————————————-
-📞 +(960) 9980462 
-📞 +(960) 7980462
-
-Follow HMHI Travels on:-
-FollowMe
-📍 https://m.followme.mv/public/325/?a=group
- Viber
- https://invite.viber.com/?g2=AQAxY1bpkvPDc0hIA78pWZGormV%2BcxkvfD7qxV2zrVFrWHoHAWRyT8iQ6NQpB3Kq
-TikTok
-https://vm.tiktok.com/ZSdrSFtSa/
-Facebook
- https://www.facebook.com/hmhitravels/
-Instagram 
-https://www.instagram.com/hmhitravels/MULTI MALDIVES FERRY
-
-🛥 BOAT NAME : MULTI BEAST 
- 
-🔴17/10/2026*
-🔴 17th OCTOBER
- 〰️(SATURDAY)*
-
-DEPATURE 
-🏝  FROM MALE  TO MAHIBADHOO / DHANGETHI⤵️
-( ⏰️️ *10:00* ➡️ )
-
-
-DEPATURE 
-🛫  FROM AIRPORT  TO MAHIBADHOO / DHANGETHI⤵️
-( ⏰️️ *10:15* ➡️ )
-
-DEPATURE 
-  FROM DHANGETHI TO MALE / AIRPORT⤵️
-( ⏰️️ *16:00* ➡️ )
-
-🏝 DEPATURE FROM MAHIBADHOO TO MALE/AIRPORT⤵️
-( ⏰️ *16:25* ➡️ )
-
-
-*The boat will dock at Jetty 1, 2 .depending on space availability and ease of access upon arrival & depature.*
- ⚠️Hurry book your seats now.
-
-https://m.followme.mv/public/19255
-
-📞 7414445 DHANGETHI 🏝 
-📞  7314445 MAHIBADHOO 🏝 
-MULTIMALDIVES.COM
-މިޔާ އެއްގޮތަށަ އެ އެޕްލިކޭޝަން އަށް އަޅާލަދީ
